@@ -13,14 +13,28 @@ const useForm = (propsDoForm) => {
       });
     },
     clearform() {
-      setValues({ id: "", nome: "", tipo: "", descricao:"", preco: "", link: ""});
+      setValues({
+        id: "",
+        nome: "",
+        tipo: "",
+        descricao: "",
+        preco: "",
+        link: "",
+      });
     },
   };
 };
 
 const CadastrarAcessorios = () => {
   const formCadastro = useForm({
-    initialValues: { id: "", nome: "", tipo: "", descriao:"", preco:"", link: "" },
+    initialValues: {
+      id: "",
+      nome: "",
+      tipo: "",
+      descriao: "",
+      preco: "",
+      link: "",
+    },
   });
   return (
     <div>
@@ -54,19 +68,19 @@ const CadastrarAcessorios = () => {
         <input
           placeholder="Descricao do acessorio"
           name="Descricao"
-          value={formCadastro.values.tipo}
+          value={formCadastro.values.descricao}
           onChange={formCadastro.handleChange}
         />
         <input
           placeholder="Preco do acessorio"
           name="Preco"
-          value={formCadastro.values.tipo}
+          value={formCadastro.values.preco}
           onChange={formCadastro.handleChange}
         />
         <input
           placeholder="Link do acessorio"
           name="Link"
-          value={formCadastro.values.tipo}
+          value={formCadastro.values.link}
           onChange={formCadastro.handleChange}
         />
 

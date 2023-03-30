@@ -18,7 +18,7 @@ const useForm = (propsDoForm) => {
   };
 };
 
-const atualizaracessorios = () => {
+const AtualizarAcessorios = () => {
   const formCadastro = useForm({
     initialValues: { id: "", nome: "", tipo: "", descricao: "", preco: "", link: "" },
   });
@@ -29,8 +29,8 @@ const atualizaracessorios = () => {
           e.preventDefault();
           console.log(formCadastro.values);
           formCadastro.clearform();
-          atualizaracessorios(formCadastro.values.id, formCadastro.values);
-          alert("acessorio atualizado");
+          atualizarAcessorios(formCadastro.values.id, formCadastro.values);
+          alert("Acessorio atualizado");
         }}
       >
         <input
@@ -75,4 +75,4 @@ const atualizaracessorios = () => {
   );
 };
 
-export default atualizaracessorios;
+export default atualizarAcessorios;

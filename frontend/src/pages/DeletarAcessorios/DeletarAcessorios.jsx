@@ -17,7 +17,7 @@ const useForm = (propsDoForm) => {
     },
   };
 };
-const deletaracessorios = () => {
+const DeletarAcessorios = () => {
   const formCadastro = useForm({
     initialValues: { tipo: "" },
   });
@@ -29,7 +29,7 @@ const deletaracessorios = () => {
           e.preventDefault();
           console.log(formCadastro.values);
           formCadastro.clearform();
-          deletaracessorios(formCadastro.values.tipo);
+          deleteAcessorios(formCadastro.values.tipo);
           alert("acessorio Deletado");
         }}
       >
@@ -45,4 +45,4 @@ const deletaracessorios = () => {
   );
 };
 
-export default deletaracessorios;
+export default DeletarAcessorios;

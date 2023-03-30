@@ -16,6 +16,6 @@ const api = axios.create({
   export async function deleteAcessorios(parametro) {
     await api.delete(`/acessorios/id/${parametro}`)
   }
-  export async function atualizarAcessorios(parametro, obj) {
+  export async function c(parametro, obj) {
     await api.put(`/acessorios/id/${parametro}`, obj)
   }
