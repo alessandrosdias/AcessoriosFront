@@ -1,0 +1,8 @@
+.pageAcessorios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardAcessorios{
+    display: flex;
+}
