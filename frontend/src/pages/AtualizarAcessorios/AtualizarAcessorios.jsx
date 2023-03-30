@@ -75,4 +75,4 @@ const AtualizarAcessorios = () => {
   );
 };
 
-export default atualizarAcessorios;
+export default AtualizarAcessorios;
